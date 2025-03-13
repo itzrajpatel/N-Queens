@@ -1,7 +1,7 @@
 import "./Board.css";
 
 const Board = ({ board }) => {
-  let squareBG = ["lavenderblush", "seagreen"];
+  let squareBG = ["lavenderblush", "#85c1e9"];
 
   const totalWidth = (window.innerWidth > 425) ? 400 : (window.innerWidth-50);
   const squareSizeStyle = {
@@ -36,7 +36,7 @@ const Board = ({ board }) => {
                   <div className="w-100 h-100 d-flex align-items-center justify-content-center">
                     <i
                       style={queenSizeStyle}
-                      class="fas fa-chess-queen text-danger"
+                      className="fas fa-chess-queen text-danger"
                     ></i>
                   </div>
                 )}
